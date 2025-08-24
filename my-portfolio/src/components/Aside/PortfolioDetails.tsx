@@ -3,8 +3,8 @@ import PortfolioDetailsUI from "./PortfolioDetailsUI"
 
 function PortfolioDetails() {
   return (
-    personalData.map((singleData)=>(
-    <PortfolioDetailsUI data={singleData}/>
+    personalData.map((singleData, index)=>(
+    <PortfolioDetailsUI data={singleData} key={index}/>
     ))
   )
 }

@@ -9,18 +9,18 @@ export interface personalDataType{
 
 export const personalData:personalDataType[] = [
     {
-        value: 'swormim424@.com',
+        value: 'swormim424@ gmail.com',
         label: 'email',
-        icon: <MdOutlineEmail/>
+        icon: <MdOutlineEmail size="1.5em"/>
     },
     {
         label:'phone',
         value:'+977-986133405',
-        icon: <IoIosPhonePortrait/>
+        icon: <IoIosPhonePortrait size="1.5em"/>
     },
     {
         label:'location',
         value:'Kathmandu,Nepal',
-        icon: <MdOutlineLocationOn/>
+        icon: <MdOutlineLocationOn size="1.5em"/>
     }
 ]
