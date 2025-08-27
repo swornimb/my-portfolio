@@ -14,7 +14,7 @@ function PortfolioDetailsUI({ data }: PortfolioDetailsUIProps) {
         <label className="font-semibold text-sm">
           {data.label.toUpperCase()}
         </label>
-        <p className="text-(--primary-blue)">{data.value}</p>
+        <p>{data.value}</p>
       </div>
     </div>
   );

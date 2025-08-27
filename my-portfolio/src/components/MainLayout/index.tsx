@@ -1,9 +1,11 @@
 import PageFactory from "@/factory/PageFactory";
 import Aside from "../Aside";
 import { useTheme } from "@/hooks/useTheme";
+import Navbar from "../Navbar";
+import { NavProvider } from "@/hooks/useNav";
 
 function MainLayout() {
-  const {myTheme} = useTheme()
+  const { myTheme } = useTheme();
   return (
     <div className={myTheme}>
       <div className="h-screen flex justify-center bg-(--background)">
@@ -12,7 +14,10 @@ function MainLayout() {
             <Aside />
           </div>
           <div className="bg-(--main-section-bg) rounded-3xl border-[0.25px] border-(--border-color) flex-3 text-(--primary)">
-            <PageFactory page="about" />
+            <NavProvider>
+              <Navbar />
+              <PageFactory />
+            </NavProvider>
           </div>
         </div>
       </div>
