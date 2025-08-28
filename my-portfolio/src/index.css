@@ -74,9 +74,9 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
-  --main-section-bg: oklch(0.708 0 0);
+  --main-section-bg: #d5dce0;
   --border-color: #fff;
-  --primary-blue:#06b6d4
+  --primary-blue: #06b6d4;
 }
 
 .dark {
@@ -112,8 +112,8 @@
   --sidebar-border: oklch(1 0 0 / 10%);
   --sidebar-ring: oklch(0.556 0 0);
   --main-section-bg: #1e1e1f;
-  --border-color:#383838;
-  --primary-blue:#06b6d4
+  --border-color: #383838;
+  --primary-blue: #06b6d4;
 }
 
 @layer base {

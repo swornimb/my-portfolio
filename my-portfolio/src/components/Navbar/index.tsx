@@ -5,17 +5,34 @@ import { useNav } from "@/hooks/useNav";
 
 function Navbar() {
   const { myTheme, toggleTheme } = useTheme();
-  const {activateNav} = useNav();
+  const { activeNav, activateNav } = useNav();
   return (
     <div>
-      <div className="flex justify-end m-5 gap-5">
-        <Button className="bg-(--main-section-bg) text-(--primary) hover:text-(--primary-blue) hover:bg-(--main-section-bg) shadow-none" onClick={()=>activateNav('about')}>
+      <div className="flex justify-end">
+        <Button
+          className={`bg-(--main-section-bg) ${
+            activeNav == "about" ? "text-(--primary-blue)" : "text-(--primary)"
+          } hover:text-(--primary-blue) hover:bg-(--main-section-bg) shadow-none`}
+          onClick={() => activateNav("about")}
+        >
           About
         </Button>
-        <Button className="bg-(--main-section-bg) text-(--primary) hover:text-(--primary-blue) hover:bg-(--main-section-bg) shadow-none" onClick={()=>activateNav('resume')}>
+        <Button
+          className={`bg-(--main-section-bg) ${
+            activeNav == "resume" ? "text-(--primary-blue)" : "text-(--primary)"
+          } hover:text-(--primary-blue) hover:bg-(--main-section-bg) shadow-none`}
+          onClick={() => activateNav("resume")}
+        >
           Resume
         </Button>
-        <Button className="bg-(--main-section-bg) text-(--primary) hover:text-(--primary-blue) hover:bg-(--main-section-bg) shadow-none" onClick={()=>activateNav('contacts')}>
+        <Button
+          className={`bg-(--main-section-bg) ${
+            activeNav == "contacts"
+              ? "text-(--primary-blue)"
+              : "text-(--primary)"
+          } hover:text-(--primary-blue) hover:bg-(--main-section-bg) shadow-none`}
+          onClick={() => activateNav("contacts")}
+        >
           Contacts
         </Button>
         <Button
