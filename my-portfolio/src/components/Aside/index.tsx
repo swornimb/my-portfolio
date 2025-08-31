@@ -12,7 +12,7 @@ function Aside() {
               <img src={profile} alt="Profile-Picture" />
             </div>
           </div>
-          <div className="text-2xl">Swornim Bhattarai</div>
+          <div className="text-xl">Swornim Bhattarai</div>
           <Badge className="justify-self-center" variant="secondary">
             Software Engineer
           </Badge>

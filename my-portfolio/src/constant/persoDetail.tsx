@@ -1,26 +1,26 @@
 import { IoIosPhonePortrait } from "react-icons/io";
-import {MdOutlineEmail, MdOutlineLocationOn} from "react-icons/md"
+import { MdOutlineEmail, MdOutlineLocationOn } from "react-icons/md";
 
-export interface personalDataType{
-    label:string;
-    value:string;
-    icon:React.ReactNode
+export interface personalDataType {
+  label: string;
+  value: string;
+  icon: React.ReactNode;
 }
 
-export const personalData:personalDataType[] = [
-    {
-        value: 'swormim424@ gmail.com',
-        label: 'email',
-        icon: <MdOutlineEmail size="1.5em"/>
-    },
-    {
-        label:'phone',
-        value:'+977-986133405',
-        icon: <IoIosPhonePortrait size="1.5em"/>
-    },
-    {
-        label:'location',
-        value:'Kathmandu,Nepal',
-        icon: <MdOutlineLocationOn size="1.5em"/>
-    }
-]
+export const personalData: personalDataType[] = [
+  {
+    value: "swornim424@gmail.com",
+    label: "email",
+    icon: <MdOutlineEmail size="1.5em" />,
+  },
+  {
+    label: "phone",
+    value: "+977-986133405",
+    icon: <IoIosPhonePortrait size="1.5em" />,
+  },
+  {
+    label: "location",
+    value: "Kathmandu, Nepal",
+    icon: <MdOutlineLocationOn size="1.5em" />,
+  },
+];

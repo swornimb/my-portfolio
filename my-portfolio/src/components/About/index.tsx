@@ -1,8 +1,7 @@
-import { FaLaptopCode } from "react-icons/fa";
 import Skills from "../Skill";
 import { Card, CardContent } from "../ui/card";
 import { IoCodeSlashOutline } from "react-icons/io5";
-import { MdOutlineDesignServices, MdOutlineEmail } from "react-icons/md";
+import { MdOutlineDesignServices } from "react-icons/md";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { CiServer } from "react-icons/ci";
 
