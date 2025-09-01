@@ -10,13 +10,13 @@ interface ThemeContextProps {
 }
 
 export const ThemeContext = createContext<ThemeContextType | undefined>({
-  myTheme:'light',
+  myTheme:'dark',
   toggleTheme:()=>{}
 }
 );
 
 export const MyThemeProvider:React.FC<ThemeContextProps> = ({ children }) => {
-  const [myTheme, setMyTheme] = useState<"light" | "dark">("light");
+  const [myTheme, setMyTheme] = useState<"light" | "dark">("dark");
   const toggleTheme = () =>
     setMyTheme((prev) => (prev === "light" ? "dark" : "light"));
   return (

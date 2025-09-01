@@ -1,6 +1,7 @@
 import profile from "@/asset/profile.png";
 import { Badge } from "../ui/badge";
 import PortfolioDetails from "./PortfolioDetails";
+import SocialMedia from "./SocialMedia";
 
 function Aside() {
   return (
@@ -10,6 +11,10 @@ function Aside() {
           <div className="profile-pic">
             <div className="bg-(--border-color) rounded-3xl">
               <img src={profile} alt="Profile-Picture" />
+              <span className="relative flex size-5">
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#39ff14] opacity-75"></span>
+                <span className="relative inline-flex size-5 rounded-full bg-[#39ff14]"></span>
+              </span>
             </div>
           </div>
           <div className="text-xl">Swornim Bhattarai</div>
@@ -19,6 +24,7 @@ function Aside() {
           <div className="h-[1px] w-full bg-(--border-color)"></div>
         </div>
         <PortfolioDetails />
+        <SocialMedia />
       </div>
     </div>
   );

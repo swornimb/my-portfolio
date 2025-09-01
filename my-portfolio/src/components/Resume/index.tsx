@@ -2,6 +2,7 @@ import { CiClock2 } from "react-icons/ci";
 import { IoBookOutline } from "react-icons/io5";
 import { Button } from "../ui/button";
 import myCV from "@/asset/Swornim_CV_final.pdf";
+import Titles from "../Common/Titles";
 
 function Resume() {
   const handleCV = () => {
@@ -11,10 +12,7 @@ function Resume() {
   return (
     <div>
       <section className="mb-10">
-        <div className="text-3xl font-bold">Resume</div>
-        <div className="h-1.5 bg-(--primary-blue) w-[5em] rounded my-5"></div>
-      </section>
-      <section className="my-5">
+        <Titles title="Resume" />
         <div className="flex gap-5">
           <div className="text-(--primary-blue)">
             <IoBookOutline size={30} />
@@ -39,7 +37,7 @@ function Resume() {
           </div>
         </div>
       </section>
-      <section className="my-5">
+      <section className="mb-10">
         <div className="flex gap-5">
           <div className="text-(--primary-blue)">
             <CiClock2 size={30} />

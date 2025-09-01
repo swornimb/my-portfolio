@@ -4,18 +4,18 @@ import { IoCodeSlashOutline } from "react-icons/io5";
 import { MdOutlineDesignServices } from "react-icons/md";
 import { IoIosPhonePortrait } from "react-icons/io";
 import { CiServer } from "react-icons/ci";
+import Titles from "../Common/Titles";
 
 function About() {
   return (
     <div>
       <section className="mb-10">
-        <div className="text-3xl font-bold">About Me</div>
-        <div className="h-1.5 bg-(--primary-blue) w-[5em] rounded my-5"></div>
+        <Titles title="About Me"/>
         <p>
-          A passionate web developer with strong expertise in cross-platform
-          apps, REST APIs, UI/UX, widgets, and state management solutions.
-          Proven track record in delivering cutting-edge solutions, including
-          API integration, third-party libraries, and performance optimization.
+          A passionate web developer with strong expertise in web development,
+          REST APIs, UI/UX, widgets, and state management solutions. Proven
+          track record in delivering cutting-edge solutions, including API
+          integration, third-party libraries, and performance optimization.
           Adept at debugging to ensure high-quality, responsive apps and An
           agile collaborator committed to staying current with industry trends.
         </p>
@@ -26,9 +26,8 @@ function About() {
           a reality!
         </p>
       </section>
-      <section className="my-10">
-        <div className="text-3xl font-bold">What I'm Doing</div>
-        <div className="h-1.5 bg-(--primary-blue) w-[5em] rounded my-5"></div>
+      <section className="mb-10">
+        <Titles title="What I'm Doing"/>
         <div className="grid grid-cols-2 gap-5">
           <Card className="bg-(--secondary)">
             <CardContent className="flex gap-5">
@@ -87,8 +86,7 @@ function About() {
         </div>
       </section>
       <section>
-        <div className="text-3xl font-bold">My Skills</div>
-        <div className="h-1.5 bg-(--primary-blue) w-[5em] rounded my-5"></div>
+        <Titles title="My Skills"/>
         <div className="mx-15">
           <Skills />
         </div>
