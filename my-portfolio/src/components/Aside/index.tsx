@@ -11,10 +11,12 @@ function Aside() {
           <div className="profile-pic">
             <div className="bg-(--border-color) rounded-3xl">
               <img src={profile} alt="Profile-Picture" />
-              <span className="relative flex size-5">
+              <div className="w-full flex justify-end">
+                <span className="relative flex size-5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#39ff14] opacity-75"></span>
                 <span className="relative inline-flex size-5 rounded-full bg-[#39ff14]"></span>
               </span>
+              </div>
             </div>
           </div>
           <div className="text-xl">Swornim Bhattarai</div>

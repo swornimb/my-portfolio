@@ -12,13 +12,20 @@ interface NavContextProps {
 
 export const navContext = createContext<NavType>({
   activeNav: "about",
-  activateNav:(data: "about" | "resume" | "contacts") => {},
+  activateNav: (data: "about" | "resume" | "contacts") => {},
 });
 
 export const NavProvider: React.FC<NavContextProps> = ({ children }) => {
-  const [activeNav, setActiveNav] = useState<"about" | "resume" | "contacts">('about'); 
-  const activateNav = (data: "about" | "resume" | "contacts")=>setActiveNav(data)
-  return <navContext.Provider value={{activeNav,activateNav}}>{children}</navContext.Provider>;
+  const [activeNav, setActiveNav] = useState<"about" | "resume" | "contacts">(
+    "about"
+  );
+  const activateNav = (data: "about" | "resume" | "contacts") =>
+    setActiveNav(data);
+  return (
+    <navContext.Provider value={{ activeNav, activateNav }}>
+      {children}
+    </navContext.Provider>
+  );
 };
 
 export const useNav = () => {

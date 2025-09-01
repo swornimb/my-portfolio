@@ -4,7 +4,7 @@ import { MyThemeProvider } from "./hooks/useTheme";
 function App() {
   return (
     <MyThemeProvider>
-      <MainLayout />
+      <MainLayout/>
     </MyThemeProvider>
   );
 }

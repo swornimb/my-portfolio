@@ -1,7 +1,8 @@
+import SkillItem from "./SkillItem";
+import RenderList from "../Common/RenderList";
 import {
   Carousel,
   CarouselContent,
-  CarouselItem,
   CarouselNext,
   CarouselPrevious,
 } from "../ui/carousel";
@@ -10,13 +11,7 @@ function Skills() {
   return (
     <Carousel>
       <CarouselContent>
-        {mySkill.map((oneSkill) => (
-          <CarouselItem className="basis-1/4 justify-items-center">
-            <div className="w-30 bg-(--secondary) p-5 rounded-3xl ">
-              <img src={oneSkill} />
-            </div>
-          </CarouselItem>
-        ))}
+        <RenderList data={mySkill} dataName="skill" design={SkillItem} />
       </CarouselContent>
       <CarouselPrevious />
       <CarouselNext />
