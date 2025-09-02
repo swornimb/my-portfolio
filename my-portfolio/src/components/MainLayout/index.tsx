@@ -26,7 +26,7 @@ function MainLayout() {
           </div>
         </div>
       </div>
-      <div className="block text-(--primary) h-screen bg-background text-3xl flex text-center items-center w-full overflow-hidden lg:hidden">
+      <div className="block text-(--primary) h-screen bg-background text-3xl flex text-center items-center w-full overflow-hidden 2xl:hidden">
         The site is under constuction for small screens. Please view the site in
         a larger screen.
       </div>
