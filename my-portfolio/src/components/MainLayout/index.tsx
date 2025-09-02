@@ -9,7 +9,7 @@ function MainLayout() {
   return (
     <>
       <div
-        className={`${myTheme} bg-(--background) min-h-screen hidden lg:block`}
+        className={`${myTheme} bg-(--background) min-h-screen hidden 2xl:block`}
         style={{ fontFamily: "Poppins" }}
       >
         <div className="flex justify-center">
