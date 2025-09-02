@@ -12,7 +12,7 @@ interface NavContextProps {
 
 export const navContext = createContext<NavType>({
   activeNav: "about",
-  activateNav: (data: "about" | "resume" | "contacts") => {},
+  activateNav: () => {},
 });
 
 export const NavProvider: React.FC<NavContextProps> = ({ children }) => {
