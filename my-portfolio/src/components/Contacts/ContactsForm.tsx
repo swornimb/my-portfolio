@@ -18,7 +18,7 @@ function ContactsForm() {
     const data = await response.json();
 
     if (data.success) {
-      return "Yayyy";
+      return "The message is sent successfully.";
     } else {
       return data.message;
     }
@@ -33,51 +33,53 @@ function ContactsForm() {
       <div className="mb-10">
         <Titles title="Contact Form" />
         <div className="my-5">
-          {error && error}
-          <form action={submitAction}>
-            <div className="grid grid-cols-2 gap-5">
-              <Input
-                type="text"
-                placeholder="Name"
-                className="h-10 border-1 border-(--secondary)"
-                name="name"
-                required
-              />
-              <Input
-                type="email"
-                placeholder="E-Mail"
-                className="h-10 border-1 border-(--secondary)"
-                name="email"
-              />
-              <Input
-                type="number"
-                placeholder="Phone Number"
-                className="h-10 border-1 border-(--secondary)"
-              />
-              <Input
-                type="text"
-                placeholder="Subject"
-                className="h-10 border-1 border-(--secondary)"
-                name="subject"
-              />
-            </div>
-            <div className="mt-5">
-              <Textarea
-                placeholder="Type your message here."
-                name="message"
-                className="h-40 border-1 border-(--secondary)"
-              />
-            </div>
-            <Button
-              className="flex justify-self-end bg-(--primary-blue) mt-5"
-              type="submit"
-            >
-              <FaPaperPlane /> {isPending ? "Submitting" : "Submit"}
-            </Button>
-          </form>
+          {error ? (
+            error
+          ) : (
+            <form action={submitAction}>
+              <div className="grid grid-cols-2 gap-5">
+                <Input
+                  type="text"
+                  placeholder="Name"
+                  className="h-10 border-1 border-(--secondary)"
+                  name="name"
+                  required
+                />
+                <Input
+                  type="email"
+                  placeholder="E-Mail"
+                  className="h-10 border-1 border-(--secondary)"
+                  name="email"
+                />
+                <Input
+                  type="number"
+                  placeholder="Phone Number"
+                  className="h-10 border-1 border-(--secondary)"
+                />
+                <Input
+                  type="text"
+                  placeholder="Subject"
+                  className="h-10 border-1 border-(--secondary)"
+                  name="subject"
+                />
+              </div>
+              <div className="mt-5">
+                <Textarea
+                  placeholder="Type your message here."
+                  name="message"
+                  className="h-40 border-1 border-(--secondary)"
+                />
+              </div>
+              <Button
+                className="flex justify-self-end bg-(--primary-blue) mt-5"
+                type="submit"
+              >
+                <FaPaperPlane /> {isPending ? "Submitting" : "Submit"}
+              </Button>
+            </form>
+          )}
         </div>
       </div>
-      <div></div>
     </section>
   );
 }
