@@ -14,10 +14,10 @@ function MainLayout() {
       >
         <div className="flex justify-center">
           <div className=" w-4/5 flex my-15 gap-10">
-            <div className="bg-(--main-section-bg) rounded-3xl border-[0.25px] border-(--border-color)  text-(--primary) flex-1 w-1/4">
+            <div className="bg-(--main-section-bg) rounded-3xl border-[0.25px] border-(--border-color)  text-(--primary) flex-1 w-1/3">
               <Aside />
             </div>
-            <div className="bg-(--main-section-bg) rounded-3xl border-[0.25px] border-(--border-color) text-(--primary) p-10 flex-3 w-3/4">
+            <div className="bg-(--main-section-bg) rounded-3xl border-[0.25px] border-(--border-color) text-(--primary) p-10 flex-3 w-2/3">
               <NavProvider>
                 <Navbar />
                 <PageFactory />
