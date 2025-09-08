@@ -1,16 +1,16 @@
-import { CarouselItem } from "../ui/carousel";
+import { MarqueeItem } from "../ui/shadcn-io/marquee";
 
-interface SkillItemProp{
-    skill: string
+interface SkillItemProp {
+  skill: string;
 }
 
-function SkillItem({skill}:SkillItemProp) {
+function SkillItem({ skill }: SkillItemProp) {
   return (
-    <CarouselItem className="basis-1/4 justify-items-center">
-      <div className="w-30 bg-(--secondary) p-5 rounded-3xl ">
+    <span className="w-20">
+      <div className="bg-(--secondary) p-5 rounded-3xl ">
         <img src={skill} />
       </div>
-    </CarouselItem>
+    </span>
   );
 }
 

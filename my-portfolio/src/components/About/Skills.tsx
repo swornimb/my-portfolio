@@ -1,21 +1,16 @@
 import SkillItem from "./SkillItem";
 import RenderList from "../Common/RenderList";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselNext,
-  CarouselPrevious,
-} from "../ui/carousel";
 import { mySkill } from "@/constant/skillsData";
+import { Marquee, MarqueeContent, MarqueeItem } from "../ui/shadcn-io/marquee";
 function Skills() {
   return (
-    <Carousel>
-      <CarouselContent>
-        <RenderList data={mySkill} dataName="skill" design={SkillItem} />
-      </CarouselContent>
-      <CarouselPrevious />
-      <CarouselNext />
-    </Carousel>
+    <Marquee>
+      <MarqueeContent>
+        <MarqueeItem className="flex gap-10 mx-5">
+          <RenderList data={mySkill} dataName="skill" design={SkillItem} />
+        </MarqueeItem>
+      </MarqueeContent>
+    </Marquee>
   );
 }
 

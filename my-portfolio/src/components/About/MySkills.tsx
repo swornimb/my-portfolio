@@ -5,7 +5,7 @@ function MySkills() {
   return (
     <section>
       <Titles title="My Skills" />
-      <div className="mx-15">
+      <div className="">
         <Skills />
       </div>
     </section>
