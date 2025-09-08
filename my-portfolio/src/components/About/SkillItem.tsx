@@ -1,5 +1,3 @@
-import { MarqueeItem } from "../ui/shadcn-io/marquee";
-
 interface SkillItemProp {
   skill: string;
 }
