@@ -3,12 +3,12 @@ import { Button } from "../ui/button";
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
 import { useNav } from "@/hooks/useNav";
 
-function Navbar() {
+function MobileNavbar() {
   const { myTheme, toggleTheme } = useTheme();
   const { activeNav, activateNav } = useNav();
   return (
-    <div className="hidden lg:block">
-      <div className="flex justify-end">
+    <div className="flex justify-center block lg:hidden">
+      <div className=" ">
         <Button
           className={`bg-(--main-section-bg) ${
             activeNav == "about" ? "text-(--primary-blue)" : "text-(--primary)"
@@ -46,4 +46,4 @@ function Navbar() {
   );
 }
 
-export default Navbar;
+export default MobileNavbar;
