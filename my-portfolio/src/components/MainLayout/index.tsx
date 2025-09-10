@@ -9,15 +9,15 @@ function MainLayout() {
   return (
     <>
       <div
-        className={`${myTheme} bg-(--background) min-h-screen hidden lg:block`}
+        className={`${myTheme} bg-(--background) min-h-screen`}
         style={{ fontFamily: "Poppins" }}
       >
         <div className="flex justify-center">
-          <div className=" w-4/5 flex my-15 gap-10">
-            <div className="bg-(--main-section-bg) rounded-3xl border-[0.25px] border-(--border-color)  text-(--primary) flex-1 w-1/3">
+          <div className=" w-4/5 flex my-15 gap-10 flex-col lg:flex-row">
+            <div className="bg-(--main-section-bg) rounded-3xl border-[0.25px] border-(--border-color)  text-(--primary) flex-1 w-full lg:w-1/3">
               <Aside />
             </div>
-            <div className="bg-(--main-section-bg) rounded-3xl border-[0.25px] border-(--border-color) text-(--primary) p-10 flex-3 w-2/3">
+            <div className="bg-(--main-section-bg) rounded-3xl border-[0.25px] border-(--border-color) text-(--primary) p-10 flex-3 w-full lg:w-2/3">
               <NavProvider>
                 <Navbar />
                 <PageFactory />
@@ -25,10 +25,6 @@ function MainLayout() {
             </div>
           </div>
         </div>
-      </div>
-      <div className="block text-(--primary) h-screen bg-background text-3xl flex text-center items-center w-full overflow-hidden lg:hidden">
-        The site is under constuction for small screens. Please view the site in
-        a larger screen.
       </div>
     </>
   );

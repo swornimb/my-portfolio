@@ -9,7 +9,7 @@ function WhatIDoCard({ work }: WhatIDoCardProp) {
   const { title, description, icon } = work;
   return (
     <Card className="bg-(--secondary)">
-      <CardContent className="flex gap-5">
+      <CardContent className="flex gap-5 flex-col lg:flex-row">
         <div className="work-icon text-(--primary-blue)">{icon}</div>
         <div>
           <p className="font-bold text-xl">{title}</p>

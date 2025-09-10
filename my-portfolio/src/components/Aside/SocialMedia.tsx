@@ -2,7 +2,7 @@ import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 
 function SocialMedia() {
   return (
-    <div className="flex justify-center gap-5">
+    <div className="flex justify-start gap-5 lg:justify-center">
       <a
         href="https://www.instagram.com/swornim.bhattarai/"
         className="hover:text-(--primary-blue)"

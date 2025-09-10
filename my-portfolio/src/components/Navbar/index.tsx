@@ -8,7 +8,7 @@ function Navbar() {
   const { activeNav, activateNav } = useNav();
   return (
     <div>
-      <div className="flex justify-end">
+      <div className="flex justify-center lg:justify-end">
         <Button
           className={`bg-(--main-section-bg) ${
             activeNav == "about" ? "text-(--primary-blue)" : "text-(--primary)"
