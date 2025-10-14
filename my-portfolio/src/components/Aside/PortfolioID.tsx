@@ -16,7 +16,9 @@ function PortfolioID() {
         </div>
       </div>
       <div className="flex flex-col gap-y-3 items-center">
-        <div className="sm:text-sm md:text-3xl lg:text-xl">Swornim Bhattarai</div>
+        <div className="sm:text-sm md:text-3xl lg:text-xl text-center">
+          Swornim Bhattarai
+        </div>
         <Badge className="justify-self-center" variant="secondary">
           Software Engineer
         </Badge>
