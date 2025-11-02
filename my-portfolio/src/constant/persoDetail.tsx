@@ -15,7 +15,7 @@ export const personalData: personalDataType[] = [
   },
   {
     label: "phone",
-    value: "+977-986133405",
+    value: "+49 17671095211",
     icon: <IoIosPhonePortrait size="1.5em" />,
   },
   {
