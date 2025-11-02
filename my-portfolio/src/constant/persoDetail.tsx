@@ -20,7 +20,7 @@ export const personalData: personalDataType[] = [
   },
   {
     label: "location",
-    value: "Kathmandu, Nepal",
+    value: "Passau, Germany",
     icon: <MdOutlineLocationOn size="1.5em" />,
   },
 ];
